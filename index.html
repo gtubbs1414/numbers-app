@@ -67,7 +67,7 @@
             let n = operand1Input.value;
             let m = operand2Input.value;
 
-            const response = await fetch("http://arithmetic-sercvice-gtubbs14.onrender.com/add/" + n + "/" + m);  // fetch is async
+            const response = await fetch("http://arithmetic-sercvice-gtubbs.onrender.com/add/" + n + "/" + m);  // fetch is async
             const sum = await response.json();  // json() is also async
 
             document.getElementById("sum").innerHTML = sum;
@@ -80,7 +80,7 @@
             let n = operand1Input.value;
             let m = operand2Input.value;
 
-            const response = await fetch("http://arithmetic-sercvice-gtubbs14.onrender.com/subtract/" + n + "/" + m);  // fetch is async
+            const response = await fetch("http://arithmetic-sercvice-gtubbs.onrender.com/subtract/" + n + "/" + m);  // fetch is async
             const sub = await response.json();  // json() is also async
 
             document.getElementById("sub").innerHTML = sum;
@@ -93,7 +93,7 @@
             let n = operand1Input.value;
             let m = operand2Input.value;
 
-            const response = await fetch("http://arithmetic-sercvice-gtubbs14.onrender.com/multiply/" + n + "/" + m);  // fetch is async
+            const response = await fetch("http://arithmetic-sercvice-gtubbs.onrender.com/multiply/" + n + "/" + m);  // fetch is async
             const prod = await response.json();  // json() is also async
 
             document.getElementById("prod").innerHTML = sum;
@@ -106,7 +106,7 @@
             let n = operand1Input.value;
             let m = operand2Input.value;
 
-            const response = await fetch("http://arithmetic-sercvice-gtubbs14.onrender.com/divide/" + n + "/" + m);  // fetch is async
+            const response = await fetch("http://arithmetic-sercvice-gtubbs.onrender.com/divide/" + n + "/" + m);  // fetch is async
             const quo = await response.json();  // json() is also async
 
             document.getElementById("quo").innerHTML = sum;
