@@ -32,7 +32,7 @@
             let n = operand1Input.value;
             let m = operand2Input.value;
 
-            const response = await fetch("http://arithmetic-sercvice-gtubbs14.onrender.com/add/" + n + "/" + m);  // fetch is async
+            const response = await fetch("http://arithmetic-sercvice-gtubbs.onrender.com/add/" + n + "/" + m);  // fetch is async
             const sum = await response.json();  // json() is also async
 
             document.getElementById("sum").innerHTML = sum;
