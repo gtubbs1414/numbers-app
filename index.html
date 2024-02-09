@@ -11,9 +11,9 @@
     <h1>Arithmetic</h1>
     <section>
 
-         <input id="operand1"  type="text">
+         <input id="aoperand1"  type="text">
          <label> + </label>
-         <input id="operand2"  type="text">
+         <input id="aoperand2"  type="text">
          <button onclick="add()"> = </button>
          <label id="sum"></label>
 
@@ -23,10 +23,10 @@
 
     <section>
 
-        <input id="operand1"  type="text">
-        <label> + </label>
-        <input id="operand2"  type="text">
-        <button onclick="add()"> = </button>
+        <input id="soperand1"  type="text">
+        <label> - </label>
+        <input id="soperand2"  type="text">
+        <button onclick="subtract()"> = </button>
         <label id="sub"></label>
 
 
@@ -35,10 +35,10 @@
 
    <section>
 
-    <input id="operand1"  type="text">
-    <label> + </label>
-    <input id="operand2"  type="text">
-    <button onclick="add()"> = </button>
+    <input id="moperand1"  type="text">
+    <label> * </label>
+    <input id="moperand2"  type="text">
+    <button onclick="multiply()"> = </button>
     <label id="prod"></label>
 
 
@@ -46,10 +46,10 @@
 </section>
 <section>
 
-    <input id="operand1"  type="text">
-    <label> + </label>
-    <input id="operand2"  type="text">
-    <button onclick="add()"> = </button>
+    <input id="doperand1"  type="text">
+    <label> / </label>
+    <input id="doperand2"  type="text">
+    <button onclick="divide()"> = </button>
     <label id="quo"></label>
 
 
@@ -61,8 +61,8 @@
     <script>
 
         async function add() {
-            let operand1Input = document.getElementById("operand1");
-            let operand2Input = document.getElementById("operand2");
+            let operand1Input = document.getElementById("aoperand1");
+            let operand2Input = document.getElementById("aoperand2");
 
             let n = operand1Input.value;
             let m = operand2Input.value;
@@ -74,8 +74,8 @@
         }
 
         async function subtract() {
-            let operand1Input = document.getElementById("operand1");
-            let operand2Input = document.getElementById("operand2");
+            let operand1Input = document.getElementById("soperand1");
+            let operand2Input = document.getElementById("soperand2");
 
             let n = operand1Input.value;
             let m = operand2Input.value;
@@ -87,8 +87,8 @@
         }
 
         async function multiply() {
-            let operand1Input = document.getElementById("operand1");
-            let operand2Input = document.getElementById("operand2");
+            let operand1Input = document.getElementById("moperand1");
+            let operand2Input = document.getElementById("moperand2");
 
             let n = operand1Input.value;
             let m = operand2Input.value;
@@ -100,8 +100,8 @@
         }
 
         async function divide() {
-            let operand1Input = document.getElementById("operand1");
-            let operand2Input = document.getElementById("operand2");
+            let operand1Input = document.getElementById("doperand1");
+            let operand2Input = document.getElementById("doperand2");
 
             let n = operand1Input.value;
             let m = operand2Input.value;
